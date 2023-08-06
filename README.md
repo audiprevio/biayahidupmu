@@ -2,9 +2,13 @@
 
 # [Biaya_Hidupmu - Financial Tracker that's for you, perhaps](https://biayahidupmu.netlify.app/)
 
+### Note:
+
+As of now Biaya_Hidupmu is only available in Bahasa Indonesia, you can use google translate feature on browsers to try to change the language.
+
 ## Project Overview
 
-Biaya HidupMu is a free financial tracker application that helps users, especially Gen Z, manage their expenses effectively while giving them a good time (maybe). The application allows users to record their financial transactions and provides real-time insights into their total balance. The user-friendly interface and responsive design make it convenient for users to interact with the application.
+Biaya_Hidupmu (Your Cost of Living) is a free financial tracker application that helps users, especially Gen Z, manage their expenses effectively while giving them a good time (maybe). The application allows users to record their financial transactions and provides real-time insights into their total balance. The user-friendly interface and responsive design make it convenient for users to interact with the application.
 
 ## Functionality Details
 
@@ -181,7 +185,7 @@ function setTheme(isDarkMode: boolean) {
   // Set the theme based on the isDarkMode value
 }
 ```
-### 7 DOM Manipulation in Summary
+### 7. DOM Manipulation in Summary
 
 The Biaya_HidupMu application utilizes TypeScript to manipulate the Document Object Model (DOM) and handle various user interactions. The key functionalities involving DOM manipulation are as follows:
 
