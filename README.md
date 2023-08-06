@@ -1,4 +1,4 @@
-![Group 1](https://github.com/audiprevio/week-7-audiprevio/assets/126348614/2a3787b5-607b-4968-8f6f-6f421eb5e494)
+![Group 1](https://github.com/audiprevio/biayahidupmu/assets/126348614/601ff46e-8ea8-4776-9ff4-b3c063fad882)
 
 # [Biaya_Hidupmu - Financial Tracker that's for you, perhaps](https://biayahidupmu.netlify.app/)
 
