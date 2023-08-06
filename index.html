@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biaya Hidup Mu | Financial Tracker for Gen Z and stuff</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @font-face {
+      font-family: 'fakeReceipt'; /* Give a name to your font */
+      src: url('/src/fake\ receipt.otf') format('opentype'); /* Replace 'path/to/your-font.otf' with the actual path to your font file */
+    }
+
+    body {
+      font-family: 'fakeReceipt', sans-serif; /* Use the font in your CSS styles */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="themeToggle" class="toggleFocus">
+      Klik untuk Ubah Mode
+    </button>
+    <h1>Biaya_HidupMu</h1>
+    <p class = "subtitle">Sebuah Aplikasi Pencatatan Finansial gratis untuk ngitung apakah biaya hidup kamu masuk akal atau tidak</p>
+    <p class = "subtitle">Datamu akan tersimpan otomatis selama kamu tidak membersihkan cache browser</p>
+    <br>
+    <hr>
+    <!-- Add a new element to display the total balance -->
+    <div id="totalBalanceContainer">
+      <p id="totalBalance">
+      <p id="dynamicText"></p>
+    </div>
+    <hr>
+    <form id="transactionForm">
+      <br>
+      <label for="date"><b>Tgl Transaksi:</b></label>
+      <input type="date" id="date" required>
+
+      <label for="item"><b>Item (transaksinya ttg apa):</b></label>
+      <input type="text" id="item" required>
+
+      <label for="amount"><b>Nominal (dalam Rupiah):</b></label>
+      <input type="number" id="amount" required>
+
+      <label for="type"><b>Tipe:</b></label>
+      <select id="type" required>
+        <option value="cash-in">Cash In</option>
+        <option value="cash-out">Cash Out</option>
+      </select>
+      <button type="submit">Catat Transaksi</button>
+    </form>
+
+    <div class="transaction-cards" id="transactionCards">
+      <!-- Transaction cards will be added here dynamically using TypeScript -->
+    </div>
+  </div>
+
+  <script src="/src/script.js"></script>
+</body>
+</html>

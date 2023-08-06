@@ -1,0 +1,229 @@
+/* Remove the default blue color for the select element (type) */
+select {
+  --webkit-appearance: none !important;
+  font-family: fakeReceipt !important;
+  border: 2px dashed #e5e5e5 !important;
+  background: transparent !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  color: inherit !important; /* Ensure the text color is not overridden */
+}
+
+body {
+  font-family: fakeReceipt !important;
+}
+
+/* Style the custom dropdown arrow */
+select::-ms-expand {
+  display: none; /* Hide the arrow in IE11 */
+}
+
+select:hover {
+  border-color: #333 !important;
+}
+
+select:focus {
+  outline: none;
+  border-color: #333;
+}
+
+
+/* Remove the default blue color for date picker */
+input[type="date"] {
+  --webkit-appearance: none !important;
+  background-color: transparent !important;
+  color: inherit !important;
+  border: 2px dashed #e5e5e5 !important;
+  padding: 0 1rem !important;
+  height: 2rem !important;
+  width: 100% !important;
+  cursor: pointer !important;
+}
+
+/* Style the date picker dropdown arrow */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) !important;
+}
+
+/* Remove the default blue link color */
+a {
+  color: #333 !important;
+  text-decoration: none !important;
+}
+
+/* Style for the cash-in class */
+.cash-in {
+  border: 1px solid #0f0;
+  background-color: #d0f0d0;
+}
+
+/* Style for the cash-out class */
+.cash-out {
+  border: 1px solid #f00;
+  background-color: #f0d0d0;
+}
+
+body {
+  color: #333;
+}
+
+
+body,
+.transaction-card,
+.dark-mode .transaction-card,
+button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggleFocus {
+  border-color: transparent;
+  background-color: transparent;
+  font-family: 'fakeReceipt'!important;
+  color: #333 !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #212121;
+}
+
+.dark-mode .transaction-card {
+  background-color: #374151;
+  color: #f9fafb;
+}
+
+.container.dark-mode {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #000;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #333 !important;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 1rem;
+}
+
+form label {
+  display: block;
+  width: 100%;
+}
+
+form input {
+  display: block !important;
+  width: 100% !important;
+  border-style: dashed !important;
+  border: 2px dashed #e5e5e5 !important;
+  height: 2rem !important;
+}
+
+form button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  font-family: fakeReceipt !important;
+  height: 3rem;
+}
+
+.transaction-card button {
+  margin-top: 1rem;
+  background-color: transparent;
+  border-color: #e5e5e5;
+  font-family: 'fakeReceipt';
+  border-style: double;
+  color: #333333;
+}
+
+input {
+  font-family: fakeReceipt !important;
+}
+
+select {
+  --webkit-appearance: none !important;
+  background-color: transparent !important;
+  color: inherit !important;
+  border: 2px dashed #e5e5e5 !important;
+  padding: 0 0 0 1rem !important;
+  height: 2.5rem !important;
+  width: 100% !important;
+  cursor: pointer !important;
+}
+
+.transaction-card {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333 !important;
+}
+
+
+.subtitle {
+  text-align: center;
+  line-height: 1.75;
+}
+
+hr {
+  border: none;
+  border-top: 2px dashed #333333; /* Set the dashed line properties */
+  margin: 10px 0; /* Optional: Add some margin to adjust the spacing */
+  color: #e5e5e5;
+  opacity: 50%;
+}
+
+/* New styles for the receipt-like design */
+.transaction-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.transaction-card p {
+  margin: 0;
+}
+
+.transaction-card p:last-child {
+  margin-top: 0.5rem;
+}
+
+#totalBalance {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.negativeValue {
+  color: rgb(207, 0, 0);
+}
+
+.positiveValue {
+  color: rgb(0, 22, 194);
+}
